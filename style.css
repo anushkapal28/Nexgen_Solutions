@@ -646,7 +646,43 @@ footer a:hover {
 }
 
 
+/* Info Bar */
+.info-bar {
+  width: 100%;
+  background: #fff5f5;
+  color: #8a1c1c;
+  border-bottom: 1px solid #f5c2c2;
+  overflow: hidden;
+  position: relative;
+  font-family: "Dosis", sans-serif;
+}
 
+.info-text {
+  white-space: nowrap;
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 15px;
+  animation: scrollText 25s linear infinite;
+}
+
+.info-text strong {
+  color: #b55b73;
+}
+
+.info-text a {
+  color: #b55b73;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.info-text a:hover {
+  text-decoration: underline;
+}
+
+@keyframes scrollText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
 
 
 
@@ -716,3 +752,4 @@ footer a:hover {
     font-size: 1rem;
   }
 }
+
